@@ -1078,7 +1078,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Reactant specieID="CKCaMCa4"  power="4"        />
         <Product  specieID="CKCaMCa4"   power="3"         />
         <Product  specieID="CKpCaMCa4"           />
-        <forwardRate> 35.0e-18 </forwardRate>
+        <forwardRate> 70.0e-18 </forwardRate>
         <reverseRate> 0e-3     </reverseRate>
         <Q10>     2             </Q10>
     </Reaction>
@@ -1089,7 +1089,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Product  specieID="CKCaMCa4"  power="2"         />
         <Product  specieID="CKpCaMCa4"           />
 
-        <forwardRate> 4.0e-12 </forwardRate>
+        <forwardRate> 8.0e-12 </forwardRate>
         <reverseRate> 0e-3     </reverseRate>
         <Q10>     2             </Q10>
     </Reaction>
@@ -1100,7 +1100,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Product  specieID="CKCaMCa4"           />
         <Product  specieID="CKpCaMCa4" power="3"         />
 
-        <forwardRate> 55.1e-18 </forwardRate>
+        <forwardRate> 110.1e-18 </forwardRate>
         <reverseRate> 0e-3     </reverseRate>
         <Q10>     2             </Q10>
     </Reaction>
