@@ -6,12 +6,12 @@
     <NanoMolarity specieID="CaMCCa" value="3500"/>
     <NanoMolarity specieID="CaMCCa2NCa" value="160"/>
     <NanoMolarity specieID="CaMNCa2CCa" value="60"/>
-    <NanoMolarity specieID="CaMNCa2" value="600"/>
+    <NanoMolarity specieID="CaMCCa2" value="600"/>
     <NanoMolarity specieID="CaMNCa2" value="500"/>
     <NanoMolarity specieID="Sensor" value="48e3"/>
     <NanoMolarity specieID="CaSensor" value="2000"/>
     <NanoMolarity specieID="CaDMn" value="4970000"/>
     <NanoMolarity specieID="Ca" value="1500"/>
-    <NanoMolarity specieID="CaDMn" value="30000"/>
+    <NanoMolarity specieID="DMn" value="30000"/>
   </ConcentrationSet>
 </InitialConditions>
