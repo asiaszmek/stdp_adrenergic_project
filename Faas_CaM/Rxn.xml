@@ -111,7 +111,7 @@
   </Reaction>
   <!--6. Binding to CaNTNR-->
   <Reaction name="CaMNCa2CCa+Ca" id="CaMNCa2_Ca2_C">
-    <Reactant specieID="CaMNCa2" />
+    <Reactant specieID="CaMNCa2CCa" />
     <Reactant specieID="Ca" />
     <Product specieID="CaMCa4"/>
     <forwardRate>2.4E-5</forwardRate>
