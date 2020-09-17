@@ -1,7 +1,17 @@
 <InitialConditions>
   <ConcentrationSet>
-    <NanoMolarity specieID="CaM" value="47e3"/>
-    <NanoMolarity specieID="Sensor" value="50e3"/>
-    <NanoMolarity specieID="CaDMn" value="5e6"/>
+    <NanoMolarity specieID="CaM" value="32e3"/>
+    <NanoMolarity specieID="CaMCa4" value="200"/>
+    <NanoMolarity specieID="CaMCCa2" value="10000"/>
+    <NanoMolarity specieID="CaMCCa" value="3500"/>
+    <NanoMolarity specieID="CaMCCa2NCa" value="160"/>
+    <NanoMolarity specieID="CaMNCa2CCa" value="60"/>
+    <NanoMolarity specieID="CaMNCa2" value="600"/>
+    <NanoMolarity specieID="CaMNCa2" value="500"/>
+    <NanoMolarity specieID="Sensor" value="48e3"/>
+    <NanoMolarity specieID="CaSensor" value="2000"/>
+    <NanoMolarity specieID="CaDMn" value="4970000"/>
+    <NanoMolarity specieID="Ca" value="1500"/>
+    <NanoMolarity specieID="CaDMn" value="30000"/>
   </ConcentrationSet>
 </InitialConditions>
