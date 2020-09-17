@@ -1,0 +1,7 @@
+<InitialConditions>
+  <ConcentrationSet>
+    <NanoMolarity specieID="CaM" value="47e3"/>
+    <NanoMolarity specieID="Sensor" value="50e3"/>
+    <NanoMolarity specieID="CaDMn" value="5e6"/>
+  </ConcentrationSet>
+</InitialConditions>

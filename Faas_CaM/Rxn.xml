@@ -1,0 +1,134 @@
+<ReactionScheme>
+  <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
+
+  <Specie name="DMn" id="DMn" kdiff="4.3" kdiffunit="mu2/s" />
+  <Specie name="CaDMn" id="CaDMn" kdiff="4.3" kdiffunit="mu2/s" />
+  <Specie name="CaPP" id="CaPP" kdiff="4.3" kdiffunit="mu2/s" />
+  <Specie name="PP" id="PP" kdiff="4.3" kdiffunit="mu2/s" />
+  <Specie name="Puff" id="Puff" kdiff="4.3" kdiffunit="mu2/s"/>
+  
+  <Specie name="Sensor" id="Sensor" kdiff="4.3" kdiffunit="mu2/s" />
+  <Specie name="CaSensor" id="CaSensor" kdiff="4.3" kdiffunit="mu2/s" />
+
+  
+  <Specie name="CaM" id="CaM" kdiff="4" kdiffunit="mu2/s" />
+  <Specie name="CaMCCa" id="CaMCCa" kdiff="4" kdiffunit="mu2/s" />
+  <Specie name="CaMCCa2" id="CaMCCa2" kdiff="4" kdiffunit="mu2/s" />
+  <Specie name="CaMNCa" id="CaMNCa" kdiff="4" kdiffunit="mu2/s" />
+  <Specie name="CaMNCa2" id="CaMNCa2" kdiff="4" kdiffunit="mu2/s" />
+  <Specie name="CaMNCa2CCa" id="CaMNCa2CCa" kdiff="4" kdiffunit="mu2/s" />
+  <Specie name="CaMCCa2NCa" id="CaMCCa2NCa" kdiff="4" kdiffunit="mu2/s" />
+  <Specie name="CaMCa4" id="CaMCa4" kdiff="4" kdiffunit="mu2/s" />
+
+  
+
+ <Reaction name="CaDMn_reac" id="CaDMn_reac">
+    <Reactant specieID="DMn" />
+    <Reactant specieID="Ca" />
+    <Product specieID="CaDMn"/>
+    <forwardRate>5.2e-5</forwardRate>
+    <reverseRate>5.2e-4</reverseRate>
+  </Reaction>
+
+  <Reaction name="CaDMn_uncaging1" id="CaDMn_uncaging1">
+    <Reactant specieID="CaDMn" />
+    <Reactant specieID="Puff" />
+    <Product specieID="CaPP" />
+    <Product specieID="PP"/>
+    <forwardRate>13.3</forwardRate>
+    <reverseRate>0</reverseRate>
+  </Reaction>
+
+  <Reaction name="CaDMn_uncaging2" id="CaDMn_uncaging2">
+    <Reactant specieID="CaDMn" />
+    <Reactant specieID="Puff" />
+    <Product specieID="CaPP" />
+    <Product specieID="PP"/>
+    <forwardRate>1</forwardRate>
+    <reverseRate>0</reverseRate>
+  </Reaction>
+
+  <Reaction name="CaPP_rozpad" id="CaPP_rozpad">
+    <Reactant specieID="PP" />
+    <Reactant specieID="Ca" />
+    <Product specieID="CaPP"/>
+    <forwardRate>.11</forwardRate>
+    <reverseRate>4.6e2</reverseRate>
+  </Reaction>
+
+
+  
+  <!-- Faas et al 2011 CaM model -->
+  <!--1. Binding to CTCT-->
+  <Reaction name="CaM+Ca_C" id="CaM_Ca_C">
+    <Reactant specieID="CaM" />
+    <Reactant specieID="Ca" />
+    <Product specieID="CaMCCa"/>
+    <forwardRate>16.8e-05</forwardRate>
+    <reverseRate>2.6</reverseRate>
+  </Reaction>
+  <!--2. Binding to CaCTCR-->
+  <Reaction name="CaMCCa+Ca" id="CaM_Ca2_C">
+    <Reactant specieID="CaMCCa" />
+    <Reactant specieID="Ca" />
+    <Product specieID="CaMCCa2"/>
+    <forwardRate>2.4E-5</forwardRate>
+    <reverseRate>13e-3</reverseRate>
+  </Reaction>
+  <!--3. Binding to NTNT-->
+<Reaction name="CaM+Ca_N" id="CaM_Ca_N">
+    <Reactant specieID="CaM" />
+    <Reactant specieID="Ca" />
+    <Product specieID="CaMNCa"/>
+    <forwardRate>15.4E-4</forwardRate>
+    <reverseRate>1.6E+2</reverseRate>
+  </Reaction>
+   <!--4. Binding to CaNTNR-->
+  <Reaction name="CaMNCa+Ca" id="CaM_Ca2_N">
+    <Reactant specieID="CaMNCa" />
+    <Reactant specieID="Ca" />
+    <Product specieID="CaMNCa2"/>
+    <forwardRate>3.2E-02</forwardRate>
+    <reverseRate>44</reverseRate>
+  </Reaction>
+
+<!-- Decided to skip the intermediate steps because there is a huge
+     difference in affinity between the C and N sites-->
+
+  <!--5. Binding to CTCT with both Ca ions bound to CaMN-->
+  <Reaction name="CaMNCa2+Ca_C" id="CaMNCa2_Ca_C">
+    <Reactant specieID="CaMNCa2" />
+    <Reactant specieID="Ca" />
+    <Product specieID="CaMNCa2CCa"/>
+    <forwardRate>16.8e-05</forwardRate>
+    <reverseRate>2.6</reverseRate>
+  </Reaction>
+  <!--6. Binding to CaNTNR-->
+  <Reaction name="CaMNCa2CCa+Ca" id="CaMNCa2_Ca2_C">
+    <Reactant specieID="CaMNCa2" />
+    <Reactant specieID="Ca" />
+    <Product specieID="CaMCa4"/>
+    <forwardRate>2.4E-5</forwardRate>
+    <reverseRate>13e-3</reverseRate>
+  </Reaction>
+
+  <!--7. Binding to CaMCCa2NTNT-->
+<Reaction name="CaMCCa2+Ca_N" id="CaMCCa2_Ca_N">
+    <Reactant specieID="CaMCCa2" />
+    <Reactant specieID="Ca" />
+    <Product specieID="CaMCCa2NCa"/>
+    <forwardRate>15.4E-4</forwardRate>
+    <reverseRate>1.6E+2</reverseRate>
+  </Reaction>
+   <!--8. Binding to CaMCCa2CaNTNR-->
+  <Reaction name="CaMCCa2NCa+Ca" id="CaMCCa2_Ca2_N">
+    <Reactant specieID="CaMCCa2NCa" />
+    <Reactant specieID="Ca" />
+    <Product specieID="CaMCa4"/>
+    <forwardRate>3.2E-02</forwardRate>
+    <reverseRate>44</reverseRate>
+  </Reaction>
+
+ 
+
+</ReactionScheme>
