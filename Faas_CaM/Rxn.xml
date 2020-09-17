@@ -56,10 +56,16 @@
     <reverseRate>4.6e2</reverseRate>
   </Reaction>
 
-
+  <Reaction name="CaSensor_reac" id="CaSensor_reac">
+    <Reactant specieID="Sensor" />
+    <Reactant specieID="Ca" />
+    <Product specieID="CaSensor"/>
+    <forwardRate>8.8e-4</forwardRate>
+    <reverseRate>33.2</reverseRate>
+  </Reaction>
   
   <!-- Faas et al 2011 CaM model -->
-  <!--1. Binding to CTCT-->
+ <!-- 1. Binding to CTCT-->
   <Reaction name="CaM+Ca_C" id="CaM_Ca_C">
     <Reactant specieID="CaM" />
     <Reactant specieID="Ca" />
