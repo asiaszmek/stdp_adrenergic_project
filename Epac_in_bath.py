@@ -1,5 +1,6 @@
 from __future__ import division, print_function
 import glob
+import argparse
 import numpy as np
 import matplotlib.pyplot as plt
 labels = ['trial 0', 'trial 1', 'trial 2', 'trial 3']
