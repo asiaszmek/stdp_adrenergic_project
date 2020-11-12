@@ -26,7 +26,7 @@
     <NanoMolarity specieID="PP2BCaMCa2" value="300"/>
     <NanoMolarity specieID="PP2BCaMCa4" value="0"/>
     <NanoMolarity specieID="PP2B" value="0"/>
-    <NanoMolarity specieID="CK" value="22000"/>
+    <NanoMolarity specieID="CK" value="18780"/>
     <NanoMolarity specieID="CKCaMCa4" value="350"/>
     <NanoMolarity specieID="CKpCaMCa4" value="850"/>
     <NanoMolarity specieID="CKp" value="20"/>
@@ -38,7 +38,7 @@
     <NanoMolarity specieID="I1" value="1100"/> <!-- I1 conc 1.5 muM -->
     <NanoMolarity specieID="I1PKAc" value="0"/>
     <NanoMolarity specieID="Ip35" value="10"/>
-    <NanoMolarity specieID="PP1" value="1100"/>
+    <NanoMolarity specieID="PP1" value="3100"/>
     <NanoMolarity specieID="Ip35PP1" value="500"/>
     <NanoMolarity specieID="PDE4" value="1000"/>
     <NanoMolarity specieID="pPDE4" value="560"/>
