@@ -134,7 +134,7 @@ def make_xml(trains):
     
 if __name__ == "__main__":
     root = xml_root(fname)
-    # xml_write_to_file("HFS.xml", root)
+    xml_write_to_file("HFS.xml", root)
     train = parse_root(root)
     trains_4x3s = make_trains(train, 4, isi=3000)
     new_root = make_xml(trains_4x3s)
