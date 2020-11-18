@@ -11,10 +11,6 @@
     
     <NanoMolarity specieID="ISO" value="9"/> <!--norepinephrine-->
     <NanoMolarity specieID="ISOOut" value="2000000"/>
-    <NanoMolarity specieID="DaOut"  value="4000000" /> 
-    <NanoMolarity specieID="Da" value="10" />
-    <NanoMolarity specieID="Dbuf"            value="0" />
-    <NanoMolarity specieID="DaDbuf" value="0" />
    
     <NanoMolarity specieID="cAMP" value="58"/>
     <NanoMolarity specieID="Epac1" value="1950"/>
@@ -59,9 +55,6 @@
     <PicoSD specieID="GasGTP" value="0"/>
     <PicoSD specieID="GasGDP" value="0"/>
 
-    <PicoSD specieID="GsD1R" value="860" />
-    <PicoSD specieID="DaD1R" value="0" />
-  
     <PicoSD specieID="Gi" value="10000"/>
     <PicoSD specieID="GaiGTP" value="0"/>
     <PicoSD specieID="GaiGDP" value="0"/>
