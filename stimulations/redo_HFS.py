@@ -141,13 +141,12 @@ if __name__ == "__main__":
     
     xml_write_to_file("HFS.xml", new_root)
     train = parse_root(new_root)
-    trains_4x3s = make_trains(train, 4, isi=3000)
-    new_root_4x3s = make_xml(trains_4x3s)
-    xml_write_to_file("4xHFS_3s.xml", new_root_4x3s)
-    trains_4x80s = make_trains(train, 4, isi=80000)
-    new_root_4x80s = make_xml(trains_4x80s)
-    xml_write_to_file("4xHFS_80s.xml", new_root_4x80s)
-    
+
+    for isi in [1000, 3000, 20000, 40000, 80000, 300000]:
+        trains_isi = make_trains(train, 4, isi=isi)
+        new_root_isi = make_xml(trains_isi)
+        xml_write_to_file("4xHFS_%ds.xml" % (isi//1000), new_root_isi)
+        print("4xHFS_%ds.xml" % (isi//1000))
     
 
     
