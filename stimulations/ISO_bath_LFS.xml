@@ -23,22 +23,6 @@
        
 </InjectionStim>
 
-<InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
-        <onset>400000</onset>
-        <duration>180000</duration>
-        <rate>0.0025</rate>
-
-        <end>580000</end>
-
-</InjectionStim>
-
-<InjectionStim specieID="DaDbuf" injectionSite="dendrite:submembrane">
-        <onset>400000</onset>
-        <duration>180000</duration>
-        <rate>0.001</rate>
-        <end>580000</end>
-
-</InjectionStim>
 <!-- Train I -->
 
 <!-- Train I -->

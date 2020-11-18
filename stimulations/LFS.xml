@@ -11,14 +11,6 @@
         <end>580000</end>
 
 </InjectionStim>
-<InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
-        <onset>300000</onset>
-        <duration>180000</duration>
-        <rate>0.0025</rate>
-
-        <end>580000</end>
-
-</InjectionStim>
 
 <!-- Train I -->
 

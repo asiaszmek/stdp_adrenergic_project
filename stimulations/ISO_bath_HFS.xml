@@ -761,12 +761,4 @@
           <end>401000</end>
 </InjectionStim>
 
-<InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
-           <onset>400000</onset>
-           <duration>3</duration>
-           <rate>0.5</rate>
-           <period>10</period>
-           <end>401000</end>
-</InjectionStim>
-
 </StimulationSet>
