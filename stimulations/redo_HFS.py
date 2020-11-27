@@ -136,7 +136,7 @@ if __name__ == "__main__":
     root = xml_root(fname)
     new_root = change_1_HFS_train(root, "CaCbuf", "rate",
                                   region="sa1[0].pointA",
-                                  multiplier=.5,
+                                  multiplier=1.,
                                   addition=0)
     
     xml_write_to_file("HFS.xml", new_root)
