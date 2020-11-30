@@ -3,20 +3,17 @@ from __future__ import print_function, division, unicode_literals
 import numpy as np
 import matplotlib.pyplot as plt
 import glob
-fnames_DA_pnmdar = glob.glob("model_DA_bath_trial?_total.txt")
 fnames_ISO_pnmdar = glob.glob("model_ISO_bath_trial?_total.txt")
-fnames_SCH_pnmdar = glob.glob("model_SCH_23390_bath_trial?_total.txt")
 fnames_control_pnmdar = glob.glob("../model_start_trial?_total.txt")
 
-fnames_DA_epacs = glob.glob("model_DA_bath_trial?_total.txt")
 fnames_ISO_epacs = glob.glob("model_ISO_bath_trial?_total.txt")
 fnames_control_epacs = glob.glob("../model_start_trial?_total.txt")
 
-labels = [u"Dopamine 10 μM", u"Isoproterenol 1 μM", "D1R antagonist", "control"]
+labels = [u"Isoproterenol 1 μM", "control"]
 
-list1 = [fnames_DA_epacs, fnames_ISO_epacs]
+list1 = [fnames_ISO_epacs]
 
-list2 = [fnames_DA_pnmdar, fnames_ISO_pnmdar]
+list2 = [fnames_ISO_pnmdar]
 lists = [list1, list2]
 titles = ["cAMP activity",
           "NMDAR phosphorylation"]
