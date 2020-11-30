@@ -712,7 +712,7 @@
   <InjectionStim specieID="Ca" injectionSite="dendrite:submembrane">
    <onset>30000</onset>
     <duration>3</duration>
-    <rate>150</rate>
+    <rate>120</rate>
     <period>10</period>
     <end>30500</end> 
   </InjectionStim>
