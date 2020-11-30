@@ -136,17 +136,17 @@ if __name__ == "__main__":
     root = xml_root(fname)
     new_root = change_1_HFS_train(root, "CaCbuf", "rate",
                                   region="sa1[0].pointA",
-                                  multiplier=1.,
+                                  multiplier=5.,
                                   addition=0)
     
-    xml_write_to_file("HFS.xml", new_root)
+    xml_write_to_file("HFS_10uM.xml", new_root)
     train = parse_root(new_root)
 
     for isi in [1000, 3000, 20000, 40000, 80000, 300000]:
         trains_isi = make_trains(train, 4, isi=isi)
         new_root_isi = make_xml(trains_isi)
-        xml_write_to_file("4xHFS_%ds.xml" % (isi//1000), new_root_isi)
-        print("4xHFS_%ds.xml" % (isi//1000))
+        xml_write_to_file("4xHFS_10_uM_%ds.xml" % (isi//1000), new_root_isi)
+        print("4xHFS_10_uM_%ds.xml" % (isi//1000))
     
 
     
