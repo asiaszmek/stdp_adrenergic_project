@@ -139,7 +139,7 @@ if __name__ == "__main__":
                                   multiplier=5.,
                                   addition=0)
     
-    xml_write_to_file("HFS_10uM.xml", new_root)
+    xml_write_to_file("HFS_10_uM.xml", new_root)
     train = parse_root(new_root)
 
     for isi in [1000, 3000, 20000, 40000, 80000, 300000]:
