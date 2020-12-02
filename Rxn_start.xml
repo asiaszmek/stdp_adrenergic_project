@@ -347,8 +347,8 @@ kdiffunit="mu2/s" />
   <Reactant specieID="pISObAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcpISObAR" />
-  <forwardRate>0.08e-04</forwardRate>
-  <reverseRate>44.8e-04</reverseRate>
+  <forwardRate>0.008e-04</forwardRate>
+  <reverseRate>44.8e-05</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 5d2) PKAcpISObAR -> ppISObAR + PKAc -->
@@ -365,8 +365,8 @@ kdiffunit="mu2/s" />
   <Reactant specieID="ppISObAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcppISObAR" />
-  <forwardRate>0.034e-03</forwardRate>
-  <reverseRate>44.8e-04</reverseRate>
+  <forwardRate>0.034e-04</forwardRate>
+  <reverseRate>44.8e-05</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 5d3) PKAcppISObAR -> pppISObAR + PKAc -->
@@ -452,7 +452,7 @@ kdiffunit="mu2/s" />
   <Reactant specieID="bAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcbAR" />
-  <forwardRate>0.004e-04</forwardRate>
+  <forwardRate>0.008e-04</forwardRate>
   <reverseRate>22.4e-04</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
