@@ -14,7 +14,7 @@ labels = [u"Isoproterenol 1 μM", "control"]
 list1 = [fnames_ISO_epacs]
 
 list2 = [fnames_ISO_pnmdar]
-lists = [list1, list2]
+lists = [list1]
 titles = ["cAMP activity",
           "NMDAR phosphorylation"]
 
@@ -22,7 +22,7 @@ fnames = ["cAMP_activity.png",
           "NMDAR_phosphorylation.png"]
 
 colors = ["dodgerblue", "forestgreen","violet", "k"]
-specie = ["Epac1cAMP", "pNMDAR"]
+specie = ["Epac1cAMP"]
 
 plt.rc('xtick',labelsize=14)
 plt.rc('ytick',labelsize=14)
