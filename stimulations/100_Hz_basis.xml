@@ -706,13 +706,20 @@
         <duration>1000</duration>
         <rate>1.7</rate>
         <end>35000</end>
-      </InjectionStim>
+    </InjectionStim>
+    
+    <InjectionStim specieID="CaOut" injectionSite="sa1[0].pointA">
+      <onset>31150</onset>
+      <duration>1000</duration>
+      <rate>1.7</rate>
+      <end>35000</end>
+    </InjectionStim>
 
 
   <InjectionStim specieID="Ca" injectionSite="dendrite:submembrane">
    <onset>30000</onset>
     <duration>3</duration>
-    <rate>120</rate>
+    <rate>240</rate>
     <period>10</period>
     <end>30500</end> 
   </InjectionStim>
@@ -720,7 +727,7 @@
   <InjectionStim specieID="CaB" injectionSite="dendrite:submembrane">
    <onset>31000</onset>
     <duration>3</duration>
-    <rate>15</rate>
+    <rate>30</rate>
     <period>10</period>
     <end>35000</end>
   </InjectionStim>
