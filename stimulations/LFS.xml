@@ -23,7 +23,7 @@
        
 </InjectionStim>
 
-<InjectionStim specieID="CaCBuf" injectionSite="sa1[0].pointA">
+<InjectionStim specieID="CaCbuf" injectionSite="sa1[0].pointA">
         <onset>101000</onset>
 	<duration>3</duration>
 	<rate>50</rate>
